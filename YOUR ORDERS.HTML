@@ -1,0 +1,73 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.fixed-bg {
+    background-image: url("pic14.jpeg");
+    min-height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+<body>
+<div class="fixed-bg">
+<div class="w3-content w3-section" style="max-width:600px">
+
+<center><div class="car">
+<p><font face="italic" size="8" color="white">YOUR ORDERS</p> </div></p></center>
+<img class="mySlides w3-animate-fading" src="pic17.jpeg" style="width:100%">
+<img class="mySlides w3-animate-fading" src="pic21.jpeg" style="width:100%">
+<img class="mySlides w3-animate-fading" src="return.jpeg" style="width:100%">
+<img class="mySlides w3-animate-fading" src="subscribe.jpeg" style="width:100%">
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000);    
+}
+</script>
+
+
+
+<div id="left">
+
+<session>
+<div style="background-color:black;color:black; padding:20px;">
+
+<div style="text-align:center"> 
+<a href=""><font color="white">orders</font></a>
+<a href=""><font color="white">open orders</font></a>
+<a href=""><font color="white">cancelled orders</font></a></br></br></br>
+  <button onclick=""><a href="packid.html">TRACK PACKAGE</a></button> </br>
+  <button onclick="">RETURN OR REPLACE ITEMS</button></br>
+  <button onclick="">FEEDBACK</button></br>
+  <button onclick=""></button>
+  <br><br>
+  
+
+</div> 
+
+
+
+
+</session>
+</div>
+</div>
+
+</body>
+</html> 
